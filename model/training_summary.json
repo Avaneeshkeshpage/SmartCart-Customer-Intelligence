@@ -1,0 +1,43 @@
+{
+  "raw_records": 2240,
+  "records_after_filter": 2236,
+  "records_removed": 4,
+  "cluster_counts": {
+    "Low-Engagement": 959,
+    "High-Value Store/Catalog Active": 596,
+    "High-Value Digital Active": 421,
+    "Digital-First Researchers": 260
+  },
+  "metrics": {
+    "kmeans_silhouette": 0.318,
+    "agglomerative_silhouette": 0.227,
+    "kmeans_davies_bouldin": 1.322,
+    "agglomerative_davies_bouldin": 1.647,
+    "selected_k": 4,
+    "geometric_elbow_estimate": 3,
+    "pca_components": 4,
+    "pca_explained_variance": 0.8478,
+    "pca_variance_target": 0.8,
+    "model_features": [
+      "Recency",
+      "Total_Spending",
+      "Total_Purchases",
+      "NumWebPurchases",
+      "NumCatalogPurchases",
+      "NumStorePurchases",
+      "NumDealsPurchases",
+      "NumWebVisitsMonth",
+      "Online_Purchase_Share",
+      "Deal_Purchase_Share",
+      "Web_Visit_to_Purchase_Ratio"
+    ],
+    "selection_note": "k=4 retained as a business-readable baseline; elbow is considered alongside silhouette and interpretability."
+  },
+  "segment_names": {
+    "0": "Low-Engagement",
+    "1": "High-Value Store/Catalog Active",
+    "2": "Digital-First Researchers",
+    "3": "High-Value Digital Active"
+  },
+  "geometric_elbow_estimate": 3
+}
